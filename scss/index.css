@@ -269,6 +269,55 @@
     font-size: 22px;
     font-weight: bold; }
 
+#IntroMenu {
+  position: fixed;
+  z-index: 9999;
+  top: 30%;
+  right: -100px; }
+  #IntroMenu a {
+    display: block;
+    height: 41px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    text-align: center; }
+    #IntroMenu a .icon1, #IntroMenu a .icon2, #IntroMenu a .icon3 {
+      font-size: 25px;
+      width: 41px;
+      height: 41px;
+      position: absolute;
+      z-index: 1;
+      top: -5px;
+      right: -10px;
+      border-radius: 41px;
+      color: #fff;
+      box-shadow: 0 0 3px #cdcdcd;
+      line-height: 42px; }
+    #IntroMenu a .icon1 {
+      background-color: blue; }
+    #IntroMenu a .icon2 {
+      background-color: purple; }
+    #IntroMenu a .icon3 {
+      background-color: yellow; }
+
+#Intro {
+  position: fixed;
+  z-index: 9999;
+  left: 1%;
+  bottom: -5px; }
+  #Intro a {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    text-align: center; }
+    #Intro a .icon5 img {
+      width: 150px;
+      height: 50px; }
+    #Intro a .icon6 img {
+      width: 150px;
+      height: 50px; }
+
 @media (min-width: 900px) and (max-width: 1100px) {
   .menu .nav-item .nav-link {
     color: black;
@@ -286,7 +335,13 @@
         margin-left: 10px;
         color: red;
         font-weight: bold;
-        font-size: 14px !important; } }
+        font-size: 14px !important; }
+
+  #IntroMenu {
+    display: none !important; }
+
+  #Intro {
+    display: none  !important; } }
 @media (min-width: 700px) and (max-width: 900px) {
   .menu .navbar-brand {
     width: 80px !important;
@@ -307,4 +362,16 @@
         margin-left: 10px;
         color: red;
         font-weight: bold;
-        font-size: 10px !important; } }
+        font-size: 10px !important; }
+
+  #IntroMenu {
+    display: none  !important; }
+
+  #Intro {
+    display: none  !important; } }
+@media (min-width: 300px) and (max-width: 700px) {
+  #IntroMenu {
+    display: none !important; }
+
+  #Intro {
+    display: none  !important; } }

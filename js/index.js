@@ -7,3 +7,24 @@
 //     document.getElementById("menu").style.top = "-50px";
 //   }
 // }
+var $info = $("#IntroMenu");
+$info.hide();
+
+$(window).on('scroll', function() {
+  if ($(this).scrollTop() > 100) {
+    $info.fadeIn();
+  } else {
+    $info.fadeOut();
+  }
+});
+
+var $info1 = $("#Intro");
+$info1.hide();
+
+$(window).on('scroll', function() {
+  if ($(this).scrollTop() > 100) {
+    $info1.fadeIn();
+  } else {
+    $info1.fadeOut();
+  }
+});

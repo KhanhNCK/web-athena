@@ -354,6 +354,70 @@
   }
 }
 
+#IntroMenu {
+  position: fixed;
+  z-index: 9999;
+  top: 30%;
+  right: -100px;
+  a {
+    display: block;
+    height: 41px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    .icon1,.icon2,.icon3 {
+      font-size: 25px;
+      width: 41px;
+      height: 41px;
+      position: absolute;
+      z-index: 1;
+      top: -5px;
+      right: -10px;
+      border-radius: 41px;
+      color: #fff;
+      box-shadow: 0 0 3px #cdcdcd;
+      line-height: 42px;
+    }
+    .icon1{
+      background-color: blue;
+    }
+    .icon2{
+      background-color: purple;
+    }
+    .icon3{
+      background-color: yellow;
+    }
+
+  }
+}
+
+#Intro {
+  position: fixed;
+  z-index: 9999;
+  left: 1%;
+  bottom: -5px;
+  a {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    .icon5{
+      img{
+        width: 150px;   
+        height: 50px;
+      }
+    }
+    .icon6{
+      img{
+        width: 150px;   
+        height: 50px;
+      }
+    }
+  }
+}
+
 
 @media (min-width: 900px) and (max-width: 1100px) {
   .menu {
@@ -381,6 +445,12 @@
         }
       }
     }
+  }
+  #IntroMenu{
+    display: none !important;
+  }
+  #Intro{
+    display: none  !important;
   }
 }
 
@@ -414,5 +484,20 @@
         }
       }
     }
+  }
+  #IntroMenu{
+    display: none  !important;
+  }
+  #Intro{
+    display: none  !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  #IntroMenu{
+    display: none !important;
+  }
+  #Intro{
+    display: none  !important;
   }
 }
