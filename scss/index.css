@@ -216,57 +216,181 @@
     z-index: 1; }
   #matbang .cap-mat {
     text-align: center; }
+    #matbang .cap-mat:hover {
+      color: #e09b06; }
 
-#tintuc {
+#tintuc, #content {
   margin-top: 2%; }
-  #tintuc .cap-main {
+  #tintuc .cap-main, #content .cap-main {
     padding-top: 50px;
     padding-bottom: 50px; }
-    #tintuc .cap-main h3 {
+    #tintuc .cap-main h3, #content .cap-main h3 {
       font-size: 26px;
       color: black;
       text-align: center;
       font-weight: bold; }
-    #tintuc .cap-main:after {
+    #tintuc .cap-main:after, #content .cap-main:after {
       content: "";
       display: block;
       width: 100px;
       height: 3px;
       background: #c4161c;
       margin: 2px auto 0; }
-  #tintuc img {
-    height: 250px;
+  #tintuc img, #content img {
+    height: 200px;
     width: 350px; }
-  #tintuc .cap-mat {
+  #tintuc .plus:hover, #content .plus:hover {
+    opacity: 0.8;
+    transition: all 0.5s; }
+  #tintuc a, #content a {
+    text-decoration: none; }
+    #tintuc a .cap-mat, #content a .cap-mat {
+      margin-top: 5%;
+      text-align: center; }
+      #tintuc a .cap-mat h3, #content a .cap-mat h3 {
+        color: black;
+        font-weight: bold;
+        font-size: 17px; }
+        #tintuc a .cap-mat h3:hover, #content a .cap-mat h3:hover {
+          color: #e09b06; }
+      #tintuc a .cap-mat p, #content a .cap-mat p {
+        color: black;
+        font-size: 15px; }
+  #tintuc .info, #content .info {
+    color: #aaa2a2;
+    padding-left: 10px; }
+    #tintuc .info span, #content .info span {
+      padding-left: 5px; }
+
+#content .tt .abc {
+  width: 1000px;
+  height: 400px; }
+#content .tt h3 {
+  text-align: center;
+  color: #e09b06; }
+#content ul {
+  list-style: none;
+  display: flex; }
+  #content ul li {
+    margin: 3%; }
+  #content ul li:hover {
+    transform: translate(0, -0.5em);
+    transition: all 0.5s ease 0s; }
+#content #inf {
+  margin-left: 300px; }
+  #content #inf i {
+    color: #f1f1f1; }
+  #content #inf li:nth-child(1) i {
+    color: #0e508a; }
+  #content #inf li:nth-child(2) i {
+    color: #002aff; }
+  #content #inf li:nth-child(3) i {
+    color: #c73838; }
+  #content #inf li:nth-child(4) i {
+    color: #ff0000; }
+  #content #inf li:nth-child(5) i {
+    color: #e63ea0; }
+
+#searchbox {
+  position: relative;
+  width: 100px;
+  height: 35px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  background-size: 30px 23px;
+  background-position: 5px 11px;
+  background-repeat: no-repeat;
+  padding-left: 12px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out; }
+
+#searchbox:focus {
+  width: 250px;
+  border-radius: 15px;
+  outline: none; }
+
+#tinnew {
+  margin-top: 5%;
+  /* Let's get this party started */
+  /* Track */
+  /* Handle */ }
+  #tinnew h2 {
     margin-top: 5%;
-    text-align: center; }
-    #tintuc .cap-mat h3 {
-      font-weight: bold;
-      font-size: 17px; }
-    #tintuc .cap-mat p {
-      font-size: 15px; }
-  #tintuc .plus-zoom:hover::before {
-    right: 50%;
-    left: 50%;
-    background-color: rgba(255, 255, 255, 0.5); }
-  #tintuc .plus-zoom:hover::after {
-    top: 50%;
-    bottom: 50%;
-    background-color: rgba(255, 255, 255, 0.5); }
-  #tintuc .plus-zoom::before,
-  #tintuc .plus-zoom::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    z-index: 1; }
+    line-height: 1 !important;
+    border-radius: 5px;
+    height: 33px;
+    background-color: #c4161c; }
+    #tinnew h2 span {
+      padding-left: 10px;
+      bottom: 5px;
+      position: relative;
+      color: white;
+      font-size: 16px !important;
+      text-transform: uppercase;
+      border-radius: 5px; }
+  #tinnew .scroll {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 350px;
+    background-color: white;
+    scrollbar-arrow-color: black;
+    scrollbar-face-color: black;
+    scrollbar-track-color: gray;
+    padding: 10px;
+    /*   scrollbar-3dlight-color: gray; */
+    /*   scrollbar-highlight-color: white; */
+    scrollbar-shadow-color: black; }
+    #tinnew .scroll p {
+      list-style: none;
+      font-weight: 400px;
+      font-size: 14px;
+      color: #333333;
+      border-bottom: 1px solid #c0c0c0;
+      padding-left: 3%;
+      height: auto;
+      margin-bottom: 5%;
+      line-height: 23px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+    #tinnew .scroll a {
+      text-decoration: none;
+      display: flex; }
+      #tinnew .scroll a i {
+        padding-top: 5px;
+        color: #c4161c; }
+    #tinnew .scroll p:hover {
+      color: #c4161c; }
+  #tinnew ::-webkit-scrollbar {
+    width: 7px; }
+  #tinnew ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px; }
+  #tinnew ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #c4161c;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+    #tinnew ::-webkit-scrollbar-thumb:window-inactive {
+      background: #c4161c; }
+
+.phan {
+  margin-top: 5%; }
+  .phan .page-item .page-link {
+    z-index: 1;
+    color: black;
+    border-color: #c4161c; }
+  .phan .active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #c4161c;
+    border-color: #c4161c; }
 
 #footer {
   margin-top: 3%;
@@ -355,7 +479,13 @@
     display: none !important; }
 
   #Intro {
-    display: none !important; } }
+    display: none !important; }
+
+  #content .tt .abc {
+    width: 100% !important;
+    height: auto !important; }
+  #content #inf {
+    margin-left: 0px; } }
 @media (min-width: 700px) and (max-width: 900px) {
   .menu .navbar-brand {
     width: 80px !important;
@@ -385,7 +515,13 @@
     display: none !important; }
 
   #navbar {
-    display: none; } }
+    display: none; }
+
+  #content .tt .abc {
+    width: 100% !important;
+    height: auto !important; }
+  #content #inf {
+    margin-left: 0px; } }
 @media (min-width: 300px) and (max-width: 700px) {
   #IntroMenu {
     display: none !important; }
@@ -394,4 +530,10 @@
     display: none !important; }
 
   #navbar {
-    display: none; } }
+    display: none; }
+
+  #content .tt .abc {
+    width: 100% !important;
+    height: auto !important; }
+  #content #inf {
+    margin-left: 0px; } }
